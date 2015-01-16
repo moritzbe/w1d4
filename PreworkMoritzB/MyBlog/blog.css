@@ -1,0 +1,56 @@
+h1 {
+	color: #003300; font-size: 27px;
+}
+
+.header {
+  font-family: Cambria, Georgia, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+footer {
+	background-color: #666666;
+	margin: 50px 50px;
+	padding: 10px 10px;
+	border-top: 5px solid white;
+	font-size: 10px;
+	font-style: ;
+	color: white;
+	width: 100%;
+}
+
+thead {
+	font-style: open-sans;
+}
+
+
+.articleContainer {
+  background-color: #FFFFFF;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.postAuthor {
+  font-size: 20px;
+}
+.articleContainer {
+  padding: 10px;
+  margin: 10px;
+}
+
+.centeredElement {
+	width: 400px;
+	margin: auto;
+}
+
+.floadedBox {
+    float: right;
+	width: 40px;
+	height: 40px;
+}
+
+.shadowedBox {
+  box-shadow: 10px 5px 5px #888888;
+}

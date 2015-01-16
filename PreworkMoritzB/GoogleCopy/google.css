@@ -1,0 +1,57 @@
+header {
+	color: #555566;
+	font-size: 25px;
+	width: 100% 1000px; 
+	height: 40px;
+	margin-top: 40px;
+}
+
+.Image {
+	margin:30px 100px;
+}
+
+.main {
+	width: 1000px;
+	height: 500px;
+	margin: auto;
+}
+
+.searchbar {
+	width: 600px;
+	height: 40px;
+	margin-left: 125px;
+	background-color: white;
+	position: relative;
+	top: -130px;
+	border: 1px solid grey;
+}
+
+.microphone {
+	float: right;
+	height: 33px;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+
+footer {
+	color: #555566;
+	font-size: 25px;
+	width: 100% 1000px; 
+	height: 50px;
+	margin-top: 10px;
+	background-color: #e6e6e6;
+
+	margin-top
+}
+
+.textleft { 
+	float: left; 
+	margin-left: 30px;
+    margin-top: 8px;
+}
+
+.textright { 
+	float: right; 
+	margin-right: 30px;
+	margin-top: 8px;
+}
