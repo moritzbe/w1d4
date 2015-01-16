@@ -46,20 +46,21 @@ class Checker
     	for i in 0..@movearray.size-1 do
     	    if @hashboard[@movearray[i][0]] == "wP"
     	    	#puts @movearray[i][1]
-    	    	Checker_P.new(@movearray[i][0], @movearray[i][1], "-1").forward
+    	    	Checker_P.new(@movearray[i][0], @movearray[i][1], 1, @hashboard).forward
 
 
 
 
     	    elsif @hashboard[@movearray[i][0]] == "bP"
-    	    	puts i
-    	    	Checker_P.new(@movearray[i][0], @movearray[i][1], "1").forward
+    	    	Checker_P.new(@movearray[i][0], @movearray[i][1], -1, @hashboard).forward
 
 
 
 
     	    elsif @hashboard[@movearray[i][0]] == "wP"
-    	    	puts i
+
+    	    else puts "INVALID Structure"
+
 
 
     			
@@ -69,15 +70,15 @@ class Checker
 end
 
 class Checker_P
-	def initialize(position, nextposition, direction)
-		position2 = position[0].ord + direction.to_i
-
+	def initialize(position, nextposition, direction, hashboard)
+		position2 = position[0].ord - direction
+		@hashboard = hashboard
 		@shouldbe = "#{position2.chr}#{position[1]}"
 		@nextposition = nextposition
 	end
 
 	def forward
-		binding.pry	
+		#binding.pry
 		if @shouldbe == @nextposition && @hashboard[@nextposition] == "--"
 	#@hashboard[@nextposition] == @hashboard[@nextposition]
 			puts "is valid, and nothing happens yet."
